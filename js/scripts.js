@@ -49,7 +49,7 @@ let prodact = [
 let counter = 0;
 
 for (let prdacts of prodact) {
-    ourInformations(prdacts.name, prdacts.price, prdacts.storage, prodact.brand);
+    ourInformations(prdacts.name, prdacts.price, prdacts.storage, prdacts.brand);
 }
 
 function ourInformations(prodactName, prodactPrice, prodactStorage, prodactBrand) {
@@ -60,7 +60,7 @@ function ourInformations(prodactName, prodactPrice, prodactStorage, prodactBrand
         <img src = 'https://th.bing.com/th/id/R.2cb9816f51588e3c3674b28a1cd2b8ae?rik=cmYiWYeEcXLGGg&riu=http%3a%2f%2f2.bp.blogspot.com%2f-LZ6bY3ThIx4%2fUXfNCQWVRJI%2fAAAAAAAADNo%2fVafk6qr01-g%2fs1600%2fmobile%2bphones.jpeg&ehk=vl0dI3E%2fk5kyXaQLEupH5q49Aq%2fPBHTLNtm%2fPvjk9%2fM%3d&risl=&pid=ImgRaw&r=0'>
             <p class="text-gray-600 font-bold text-center text-xl py-3 ">Brand: ${prodactName}</p>
             <p class="text-gray-600">Price: ${prodactPrice}</p>
-            <p class="text-gray-600">Price: ${prodactBrand}</p>
+            <p class="text-gray-600">Brand: ${prodactBrand}</p>
             <p class="text-gray-600">Storage: ${prodactStorage}</p>
             <button onclick = "myInfo(${prodactPrice})" class="mt-4 w-full px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">Add to Cat</button>
         </div>
